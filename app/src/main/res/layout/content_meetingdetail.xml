@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:padding="10dp"
                 >
 
@@ -32,12 +32,13 @@
                     android:layout_height="wrap_content"
                     android:text="Lunch with team B"
                     android:textColor="@color/textColorDark"
-                    android:textSize="@dimen/text_size_large"
+                    android:textSize="@dimen/text_size_verylarge"
                     android:textStyle="bold" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
 
 
                     <LinearLayout
@@ -95,7 +96,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="12:09 pm"
+                            android:text="12:16 pm"
                             android:textColor="@color/textColorDark"
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
@@ -106,12 +107,17 @@
 
             </LinearLayout>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:paddingHorizontal="20dp"
+                android:src="@drawable/maps_meeting" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="25dp"
                 android:padding="10dp"
                 android:background="@color/colorAccentLight">
 
@@ -119,76 +125,186 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/textColorDark"
-                    android:text="Uncle Dan Dinner"
+                    android:text="Members"
                     android:textSize="@dimen/text_size_large"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/textColorBright"
-                    android:textSize="@dimen/text_size_medium"
-                    android:text="18.05.20, 19:30 pm"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/textColorBright"
-                    android:textSize="@dimen/text_size_medium"
-                    android:text="Griunvaldo gatve 10"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/textColorBright"
-                    android:textSize="@dimen/text_size_medium"
-                    android:text="Dan, Thomas, Linda"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginTop="25dp"
-                android:padding="10dp"
-                android:background="@color/colorAccentLight">
-
-                <TextView
+                <View
+                    android:id="@+id/divider"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/textColorDark"
-                    android:text="Lunch with team D"
-                    android:textSize="@dimen/text_size_large"
-                    android:textStyle="bold" />
+                    android:layout_height="2dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/textColorDark" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/textColorBright"
-                    android:textSize="@dimen/text_size_medium"
-                    android:text="18.06.01, 12:30 pm"
-                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/textColorBright"
-                    android:textSize="@dimen/text_size_medium"
-                    android:text="Charlie's Pizza"
-                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Marco"
+                        />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/textColorBright"
-                    android:textSize="@dimen/text_size_medium"
-                    android:text="Thomas, John, Linda, Nina, ..."
-                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_alignParentEnd="true"
+                        android:text="arrived"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Alex"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_alignParentEnd="true"
+                        android:text="11:59 pm"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="italic"
+                        android:text="You"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBlue"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="italic"
+                        android:text="12:02 pm"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Tiffany"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_alignParentEnd="true"
+                        android:text="12:03 pm"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Valerie"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_alignParentEnd="true"
+                        android:text="12:03 pm"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="John"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBright"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_alignParentEnd="true"
+                        android:text="12:05 pm"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorImportant"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Jan"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorImportant"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_alignParentEnd="true"
+                        android:text="12:16 pm"
+                        />
+
+                </RelativeLayout>
 
             </LinearLayout>
 
