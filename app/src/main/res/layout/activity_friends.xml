@@ -16,58 +16,26 @@
         android:layout_height="match_parent"
         tools:context=".FriendsActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        android:background="#FFF">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-
-        <TextView
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lunch with team B"
-            android:textColor="#FF0000"
-            android:textSize="@dimen/text_size_large"
-            android:textStyle="bold" />
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:background="#FFF">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lunch with team B"
-        android:textColor="#FF0000"
-        android:textSize="@dimen/text_size_large"
-        android:textStyle="bold" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lunch with team B"
-        android:textColor="#FF0000"
-        android:textSize="@dimen/text_size_large"
-        android:textStyle="bold" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lunch with team B"
-        android:textColor="#FF0000"
-        android:textSize="@dimen/text_size_large"
-        android:textStyle="bold" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/content_friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"/>
+
     </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView
