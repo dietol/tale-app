@@ -5,19 +5,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_meetings"
             android:icon="@drawable/baseline_insert_invitation_black_24dp"
             android:title="Meetings" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_friends"
             android:icon="@drawable/baseline_person_black_24dp"
             android:title="Friends" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_groups"
             android:icon="@drawable/baseline_people_black_24dp"
             android:title="Groups" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_settings"
             android:icon="@drawable/baseline_settings_black_24dp"
             android:title="Settings" />
     </group>
