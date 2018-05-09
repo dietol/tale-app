@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".FriendsActivity">
+    tools:context=".MeetingDetailActivity"
+    tools:showIn="@layout/activity_meeting_detail">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginTop="25dp"
                 android:padding="10dp"
-                android:background="@color/colorAccentLight">
+                >
 
                 <TextView
                     android:layout_width="match_parent"
@@ -33,7 +34,75 @@
                     android:textColor="@color/textColorDark"
                     android:textSize="@dimen/text_size_large"
                     android:textStyle="bold" />
-                
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:background="@color/colorAccentLight"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Planned Time"
+                            android:textColor="@color/textColorDark"
+                            android:textSize="@dimen/text_size_small"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:00 pm"
+                            android:textColor="@color/textColorDark"
+                            android:textSize="@dimen/text_size_large"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/textColorDark"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/colorAccentLight"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estimated Time"
+                            android:textColor="@color/textColorDark"
+                            android:textSize="@dimen/text_size_small"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:09 pm"
+                            android:textColor="@color/textColorDark"
+                            android:textSize="@dimen/text_size_large"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
 
             </LinearLayout>
 

@@ -93,7 +93,8 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_meetings) {
-            // nothing
+            Intent i = new Intent(getApplicationContext(), HomeActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_friends) {
             Intent i = new Intent(getApplicationContext(), FriendsActivity.class);
             startActivity(i);

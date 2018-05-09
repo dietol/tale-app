@@ -34,7 +34,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="12:07 am"
+                android:text="12:07 pm"
                 android:textColor="@color/textColorDark"
                 android:textSize="@dimen/text_size_verylarge"
                 android:gravity="center"
@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColorBright"
                 android:textSize="@dimen/text_size_medium"
-                android:text="Today, 12:00 am"
+                android:text="Today, 12:00 pm"
                 />
 
             <TextView
