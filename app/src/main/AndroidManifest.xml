@@ -32,9 +32,15 @@
         <activity
             android:name=".SettingsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Register1Activity" />
-        <activity android:name=".Register2Activity" />
-        <activity android:name=".NewMeetingActivity"></activity>
+        <activity
+            android:name=".Register1Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Register2Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".NewMeetingActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
