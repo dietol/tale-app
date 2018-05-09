@@ -80,7 +80,8 @@ public class HomeActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent i = new Intent(getApplicationContext(), Register1Activity.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);
@@ -93,8 +94,7 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_meetings) {
-            Intent i = new Intent(getApplicationContext(), HomeActivity.class);
-            startActivity(i);
+            // nothing
         } else if (id == R.id.nav_friends) {
             Intent i = new Intent(getApplicationContext(), FriendsActivity.class);
             startActivity(i);
