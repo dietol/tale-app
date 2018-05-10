@@ -1,9 +1,13 @@
 package com.oliverdietz.tale_app;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -79,9 +83,33 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_register) {
             Intent i = new Intent(getApplicationContext(), Register1Activity.class);
             startActivity(i);
+        } else if (id == R.id.action_notification1) {
+            NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            NotificationChannel mChannel = new NotificationChannel("myId", "myProduct", NotificationManager.IMPORTANCE_HIGH);
+            mNotificationManager.createNotificationChannel(mChannel);
+
+            NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this, "myId");
+            mBuilder.setSmallIcon(R.drawable.ic_stat_tale);
+            mBuilder.setContentTitle("Hurry up! You are late!");
+            mBuilder.setContentText("You are 10 minutes too late. 5 others are waiting.");
+
+            // notificationID allows you to update the notification later on.
+            mNotificationManager.notify(1, mBuilder.build());
+        } else if (id == R.id.action_notification2) {
+            NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            NotificationChannel mChannel = new NotificationChannel("myId2", "myProduct2", NotificationManager.IMPORTANCE_HIGH);
+            mNotificationManager.createNotificationChannel(mChannel);
+
+            NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this, "myId2");
+            mBuilder.setSmallIcon(R.drawable.ic_stat_tale);
+            mBuilder.setContentTitle("The others are waiting! Be faster!");
+            mBuilder.setContentText("You are 16 minutes too late. 6 others are waiting.");
+
+            // notificationID allows you to update the notification later on.
+            mNotificationManager.notify(2, mBuilder.build());
         }
 
         return super.onOptionsItemSelected(item);

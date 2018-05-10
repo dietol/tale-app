@@ -8,4 +8,5 @@
     <color name="textColorBright">#6b6a6a</color>
     <color name="textColorImportant">#ff0000</color>
     <color name="textColorBlue">#0000ff</color>
+    <color name="colorLightGrey">#d3d3d3</color>
 </resources>

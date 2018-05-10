@@ -120,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="15dp"
                 android:padding="10dp"
                 android:background="@color/colorAccentLight">
 
@@ -194,7 +195,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textColorBright"
+                        android:textColor="@color/textColorBlue"
                         android:textSize="@dimen/text_size_large"
                         android:textStyle="italic"
                         android:text="You"
